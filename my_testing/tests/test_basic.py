@@ -13,5 +13,5 @@ class BasicTest(TestCase):
     def test_value_2(self):
         self.assertEquals(self.value2, 1999)
     
-    # def test_error(self):
-    #     self.assertEquals(self.value1, self.value2)
+    def test_error(self):
+        self.assertNotEqual(self.value1, self.value2)
