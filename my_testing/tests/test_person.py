@@ -22,5 +22,5 @@ class PersonTestCase(TestCase):
         self.assertEqual(self.person1.give_him_age(), "I am 30 years old")
         self.assertEqual(self.person2.give_him_age(), "I am 24 years old")
 
-    # def test_error(self):
-    #     self.assertEqual(self.person.give_him_age(), "I am 31 years old")
+    def test_error(self):
+        self.assertNotEqual(self.person.give_him_age(), "I am 31 years old")
